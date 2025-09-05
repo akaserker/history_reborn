@@ -1,0 +1,302 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #1a1f2b;
+  color: #f3f4f6;
+  margin: 0;
+  padding-top: 70px;
+  background-image: url('https://copilot.microsoft.com/th/id/BCO.e9500b60-df59-4309-8292-832a0faa0bf5.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background: rgba(26, 31, 43, 0.6);
+  z-index: -1;
+}
+
+.topo-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #201a33;
+  color: #cbd5e1;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 48px;
+  padding: 0 20px;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+
+
+.logo-topo {
+  height: 28px;
+  width: auto;
+  margin-right: 12px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  color: #e0e7ff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #c4b5fd;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: scale(1.04);
+}
+
+button.selected {
+  outline: 2px solid #c4b5fd;
+}
+
+/* Resultado */
+#resultado {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #2c3342;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#cartas h3 {
+  font-size: 16px;
+  color: #c4b5fd;
+  border-bottom: 1px solid #475569;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+#cartas ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#cartas li {
+  background-color: #3b4252;
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nome {
+  font-weight: 600;
+  flex: 1;
+}
+
+/* Tags */
+.tag {
+  margin-left: 8px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+.tag.dano {
+  background-color: #ffe0f0;
+  color: #c2185b;
+}
+
+.tag.escudo {
+  background-color: #bbf7d0;
+  color: #065f46;
+}
+
+.tag.bota {
+  background-color: #fde68a;
+  color: #78350f;
+}
+
+.tag.capa {
+  background-color: #bae6fd;
+  color: #1e3a8a;
+}
+
+.tag.acessório {
+  background-color: #ddd6fe;
+  color: #512da8;
+}
+
+/* Tag de ID */
+.tag.id {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  margin-right: 8px;
+}
+
+/* Cores pastel restauradas nos botões de elementos */
+button[data-elemento="Vento"] {
+  background-color: #B2F2BB;
+  color: #1b4332;
+}
+
+button[data-elemento="Água"] {
+  background-color: #AEE2FF;
+  color: #1e3a8a;
+}
+
+button[data-elemento="Fogo"] {
+  background-color: #FFB3BA;
+  color: #7f1d1d;
+}
+
+button[data-elemento="Terra"] {
+  background-color: #F7D9A8;
+  color: #78350f;
+}
+
+button[data-elemento="Veneno"] {
+  background-color: #D6B3FF;
+  color: #5b21b6;
+}
+
+button[data-elemento="Maldito"] {
+  background-color: #E2D4F0;
+  color: #4c1d95;
+}
+
+
+/* Rodapé fixo */
+.rodape-fixo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+  background-color: #860956;
+  color: #cbd5e1;
+  font-size: 11px;
+  font-weight: 500;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+.rodape-fixo a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.rodape-fixo a:hover {
+  text-decoration: underline;
+}
+
+
+.qr-fixo {
+  position: fixed;
+  bottom: 27px;
+  right: 20px;
+  z-index: 9;
+  width: 100px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.qr-fixo img {
+  width: 120%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+.titulo-imagem {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.mensagem-boasvindas {
+  background-color: #2c3342;
+  padding: 16px;
+  border-radius: 12px;
+  color: #f3f4f6;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mensagem-boasvindas a {
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mensagem-boasvindas a:hover {
+  text-decoration: underline;
+}
+
+.mensagem-boasvindas.hidden {
+  display: none;
+}
+
+.tag.id {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.tag.id:hover {
+  text-decoration: underline;
+  background-color: #e9d5ff;
+}
+
+
