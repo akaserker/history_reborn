@@ -49,8 +49,8 @@ const elementosData = {
     { id: 115, texto: "Firewind 35% dmg → acessório" }
   ],
   "Maldito": [
-    { id: 27362, texto: "Contaminated Spider Queen 100% dmg → capa" },
-    { id: 300364, texto: "Calmaring 35% dmg → acessório" }
+    { id: 4576, texto: "Gioia 100% dmg → capa" },
+    { id: 300222, texto: "Firewind 35% dmg → acessório" }
   ]
 };
 
